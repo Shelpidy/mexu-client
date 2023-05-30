@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User One</title>
+    <script src="https://cdn.socket.io/4.6.0/socket.io.min.js" integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+" crossorigin="anonymous"></script>
+
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .chat-form{
+            display: flex;
+            flex-direction: row;
+            margin: 8px;
+        }
+        textarea{
+            min-width: 30vw;
+            /* height: 25px; */
+            border-color: #18246b;
+            outline: none;
+            resize: vertical;
+        }
+        button{
+            height: 30px;
+            width: 6vw;
+            background-color: #18246b;
+            color: white;
+            border:none;
+            border-radius:3px;
+            padding: 5px;
+            margin-left: 5px;
+        }
+        .chat-box{
+            background-color: #f9f9f9;
+            width: 40vw;
+            border-radius: 5px;
+            padding: 8px;
+            display: flex;
+            flex-direction: column;
+          
+        }
+        .header{
+            min-width: 40vw;
+            background-color: #18246b;
+            padding: 5px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+        span{
+            margin: 6px;
+            color:#fff
+
+        }
+        .t-status{
+        color:#ffffff55;
+            
+        }
+        .o-status{
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+  
+    <div class="container">
+          <div class="header">
+             <span>Second User</span><span class="t-status"></span> <span class="o-status"></span>
+        </div>
+         <div class="chat-box">
+           
+        </div>
+        <div class="chat-form">
+            <textarea title="Message" rows="3"></textarea>
+            <button>Send</button>
+        </div>
+       
+    </div>
+    
+<script src="index.js"></script>
+</body>
+</html>
